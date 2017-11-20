@@ -1,0 +1,21 @@
+#!/bin/bash
+#SBATCH --job-name="hadoopanagram"
+#SBATCH --output="hadoopanagram.%j.%N.out"
+#SBATCH --partition=compute
+#SBATCH --nodes=2
+#SBATCH --ntasks-per-node=24
+#SBATCH -t 00:15:00
+export HADOOP_CONF_DIR=/home/$USER/cometcluster
+export WORKDIR=`pwd`
+module load hadoop/1.2.1
+#module load hadoop/2.6.0
+myhadoop-configure.sh
+start-all.sh
+hadoop dfs -mkdir input
+hadoop dfs -copyFromLocal $WORKDIR/SINGLE.TXT input/
+hadoop jar $WORKDIR/AnagramJob.jar input/SINGLE.TXT output
+#have to remove these files first, otherwise their existance will not allow copying
+rm -f part*
+hadoop dfs -copyToLocal output/part* $WORKDIR
+stop-all.sh
+myhadoop-cleanup.sh

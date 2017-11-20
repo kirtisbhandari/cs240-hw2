@@ -1,0 +1,299 @@
+myHadoop: Setting MH_IPOIB_TRANSFORM='s/\([^.]*\).*$/\1.ibnet/' from myhadoop.conf
+myHadoop: Setting MH_SCRATCH_DIR=/scratch/$USER/$SLURM_JOBID from myhadoop.conf
+myHadoop: Using HADOOP_HOME=/opt/hadoop/1.2.1
+myHadoop: Using MH_SCRATCH_DIR=/scratch/tyang/1569018
+myHadoop: Using JAVA_HOME=/usr/java/latest
+myHadoop: Generating Hadoop configuration in directory in /home/tyang/cometcluster...
+myHadoop: Backing up old config dir to /home/tyang/cometcluster.0...
+`/home/tyang/cometcluster' -> `/home/tyang/cometcluster.0'
+myHadoop: Designating comet-17-14.ibnet as master node (namenode, secondary namenode, and jobtracker)
+myHadoop: The following nodes will be slaves (datanode, tasktracer):
+comet-17-14.ibnet
+comet-17-15.ibnet
+16/01/31 17:43:35 INFO namenode.NameNode: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting NameNode
+STARTUP_MSG:   host = comet-17-14.sdsc.edu/198.202.114.117
+STARTUP_MSG:   args = [-format, -nonInteractive, -force]
+STARTUP_MSG:   version = 1.2.1
+STARTUP_MSG:   build = https://svn.apache.org/repos/asf/hadoop/common/branches/branch-1.2 -r 1503152; compiled by 'mattf' on Mon Jul 22 15:23:09 PDT 2013
+STARTUP_MSG:   java = 1.7.0_51
+************************************************************/
+16/01/31 17:43:35 INFO util.GSet: Computing capacity for map BlocksMap
+16/01/31 17:43:35 INFO util.GSet: VM type       = 64-bit
+16/01/31 17:43:35 INFO util.GSet: 2.0% max memory = 1005060096
+16/01/31 17:43:35 INFO util.GSet: capacity      = 2^21 = 2097152 entries
+16/01/31 17:43:35 INFO util.GSet: recommended=2097152, actual=2097152
+16/01/31 17:43:35 INFO namenode.FSNamesystem: fsOwner=tyang
+16/01/31 17:43:35 INFO namenode.FSNamesystem: supergroup=supergroup
+16/01/31 17:43:35 INFO namenode.FSNamesystem: isPermissionEnabled=true
+16/01/31 17:43:35 INFO namenode.FSNamesystem: dfs.block.invalidate.limit=100
+16/01/31 17:43:35 INFO namenode.FSNamesystem: isAccessTokenEnabled=false accessKeyUpdateInterval=0 min(s), accessTokenLifetime=0 min(s)
+16/01/31 17:43:35 INFO namenode.FSEditLog: dfs.namenode.edits.toleration.length = 0
+16/01/31 17:43:35 INFO namenode.NameNode: Caching file names occuring more than 10 times 
+16/01/31 17:43:35 INFO common.Storage: Image file /scratch/tyang/1569018/namenode_data/current/fsimage of size 111 bytes saved in 0 seconds.
+16/01/31 17:43:35 INFO namenode.FSEditLog: closing edit log: position=4, editlog=/scratch/tyang/1569018/namenode_data/current/edits
+16/01/31 17:43:35 INFO namenode.FSEditLog: close success: truncate to 4, editlog=/scratch/tyang/1569018/namenode_data/current/edits
+16/01/31 17:43:35 INFO common.Storage: Storage directory /scratch/tyang/1569018/namenode_data has been successfully formatted.
+16/01/31 17:43:35 INFO namenode.NameNode: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down NameNode at comet-17-14.sdsc.edu/198.202.114.117
+************************************************************/
+starting namenode, logging to /scratch/tyang/1569018/logs/hadoop-tyang-namenode-comet-17-14.out
+comet-17-14.ibnet: starting datanode, logging to /scratch/tyang/1569018/logs/hadoop-tyang-datanode-comet-17-14.sdsc.edu.out
+comet-17-15.ibnet: starting datanode, logging to /scratch/tyang/1569018/logs/hadoop-tyang-datanode-comet-17-15.sdsc.edu.out
+comet-17-14.ibnet: starting secondarynamenode, logging to /scratch/tyang/1569018/logs/hadoop-tyang-secondarynamenode-comet-17-14.sdsc.edu.out
+starting jobtracker, logging to /scratch/tyang/1569018/logs/hadoop-tyang-jobtracker-comet-17-14.out
+comet-17-14.ibnet: starting tasktracker, logging to /scratch/tyang/1569018/logs/hadoop-tyang-tasktracker-comet-17-14.sdsc.edu.out
+comet-17-15.ibnet: starting tasktracker, logging to /scratch/tyang/1569018/logs/hadoop-tyang-tasktracker-comet-17-15.sdsc.edu.out
+16/01/31 17:43:44 WARN mapred.JobClient: Use GenericOptionsParser for parsing the arguments. Applications should implement Tool for the same.
+16/01/31 17:43:44 INFO input.FileInputFormat: Total input paths to process : 1
+16/01/31 17:43:44 INFO util.NativeCodeLoader: Loaded the native-hadoop library
+16/01/31 17:43:44 WARN snappy.LoadSnappy: Snappy native library not loaded
+16/01/31 17:43:44 INFO mapred.JobClient: Running job: job_201601311743_0001
+16/01/31 17:43:45 INFO mapred.JobClient:  map 0% reduce 0%
+16/01/31 17:43:49 INFO mapred.JobClient:  map 100% reduce 0%
+16/01/31 17:43:56 INFO mapred.JobClient:  map 100% reduce 33%
+16/01/31 17:43:57 INFO mapred.JobClient:  map 100% reduce 100%
+16/01/31 17:43:57 INFO mapred.JobClient: Job complete: job_201601311743_0001
+16/01/31 17:43:57 INFO mapred.JobClient: Counters: 29
+16/01/31 17:43:57 INFO mapred.JobClient:   Job Counters 
+16/01/31 17:43:57 INFO mapred.JobClient:     Launched reduce tasks=1
+16/01/31 17:43:57 INFO mapred.JobClient:     SLOTS_MILLIS_MAPS=3088
+16/01/31 17:43:57 INFO mapred.JobClient:     Total time spent by all reduces waiting after reserving slots (ms)=0
+16/01/31 17:43:57 INFO mapred.JobClient:     Total time spent by all maps waiting after reserving slots (ms)=0
+16/01/31 17:43:57 INFO mapred.JobClient:     Launched map tasks=1
+16/01/31 17:43:57 INFO mapred.JobClient:     Data-local map tasks=1
+16/01/31 17:43:57 INFO mapred.JobClient:     SLOTS_MILLIS_REDUCES=8120
+16/01/31 17:43:57 INFO mapred.JobClient:   File Output Format Counters 
+16/01/31 17:43:57 INFO mapred.JobClient:     Bytes Written=103
+16/01/31 17:43:57 INFO mapred.JobClient:   FileSystemCounters
+16/01/31 17:43:57 INFO mapred.JobClient:     FILE_BYTES_READ=253
+16/01/31 17:43:57 INFO mapred.JobClient:     HDFS_BYTES_READ=233
+16/01/31 17:43:57 INFO mapred.JobClient:     FILE_BYTES_WRITTEN=114902
+16/01/31 17:43:57 INFO mapred.JobClient:     HDFS_BYTES_WRITTEN=103
+16/01/31 17:43:57 INFO mapred.JobClient:   File Input Format Counters 
+16/01/31 17:43:57 INFO mapred.JobClient:     Bytes Read=112
+16/01/31 17:43:57 INFO mapred.JobClient:   Map-Reduce Framework
+16/01/31 17:43:57 INFO mapred.JobClient:     Map output materialized bytes=253
+16/01/31 17:43:57 INFO mapred.JobClient:     Map input records=4
+16/01/31 17:43:57 INFO mapred.JobClient:     Reduce shuffle bytes=253
+16/01/31 17:43:57 INFO mapred.JobClient:     Spilled Records=46
+16/01/31 17:43:57 INFO mapred.JobClient:     Map output bytes=201
+16/01/31 17:43:57 INFO mapred.JobClient:     Total committed heap usage (bytes)=402653184
+16/01/31 17:43:57 INFO mapred.JobClient:     CPU time spent (ms)=1400
+16/01/31 17:43:57 INFO mapred.JobClient:     Combine input records=0
+16/01/31 17:43:57 INFO mapred.JobClient:     SPLIT_RAW_BYTES=121
+16/01/31 17:43:57 INFO mapred.JobClient:     Reduce input records=23
+16/01/31 17:43:57 INFO mapred.JobClient:     Reduce input groups=15
+16/01/31 17:43:57 INFO mapred.JobClient:     Combine output records=0
+16/01/31 17:43:57 INFO mapred.JobClient:     Physical memory (bytes) snapshot=360153088
+16/01/31 17:43:57 INFO mapred.JobClient:     Reduce output records=15
+16/01/31 17:43:57 INFO mapred.JobClient:     Virtual memory (bytes) snapshot=1639190528
+16/01/31 17:43:57 INFO mapred.JobClient:     Map output records=23
+stopping jobtracker
+comet-17-14.ibnet: stopping tasktracker
+comet-17-15.ibnet: stopping tasktracker
+stopping namenode
+comet-17-14.ibnet: stopping datanode
+comet-17-15.ibnet: stopping datanode
+comet-17-14.ibnet: stopping secondarynamenode
+Copying Hadoop logs back to /home/tyang/cometcluster/logs...
+`/scratch/tyang/1569018/logs' -> `/home/tyang/cometcluster/logs'
+`/scratch/tyang/1569018/logs/history' -> `/home/tyang/cometcluster/logs/history'
+`/scratch/tyang/1569018/logs/history/done' -> `/home/tyang/cometcluster/logs/history/done'
+`/scratch/tyang/1569018/logs/history/done/version-1' -> `/home/tyang/cometcluster/logs/history/done/version-1'
+`/scratch/tyang/1569018/logs/history/done/version-1/comet-17-14.ibnet_1454291020638_' -> `/home/tyang/cometcluster/logs/history/done/version-1/comet-17-14.ibnet_1454291020638_'
+`/scratch/tyang/1569018/logs/history/done/version-1/comet-17-14.ibnet_1454291020638_/2016' -> `/home/tyang/cometcluster/logs/history/done/version-1/comet-17-14.ibnet_1454291020638_/2016'
+`/scratch/tyang/1569018/logs/history/done/version-1/comet-17-14.ibnet_1454291020638_/2016/01' -> `/home/tyang/cometcluster/logs/history/done/version-1/comet-17-14.ibnet_1454291020638_/2016/01'
+`/scratch/tyang/1569018/logs/history/done/version-1/comet-17-14.ibnet_1454291020638_/2016/01/31' -> `/home/tyang/cometcluster/logs/history/done/version-1/comet-17-14.ibnet_1454291020638_/2016/01/31'
+`/scratch/tyang/1569018/logs/history/done/version-1/comet-17-14.ibnet_1454291020638_/2016/01/31/000000' -> `/home/tyang/cometcluster/logs/history/done/version-1/comet-17-14.ibnet_1454291020638_/2016/01/31/000000'
+`/scratch/tyang/1569018/logs/history/done/version-1/comet-17-14.ibnet_1454291020638_/2016/01/31/000000/.job_201601311743_0001_conf.xml.crc' -> `/home/tyang/cometcluster/logs/history/done/version-1/comet-17-14.ibnet_1454291020638_/2016/01/31/000000/.job_201601311743_0001_conf.xml.crc'
+`/scratch/tyang/1569018/logs/history/done/version-1/comet-17-14.ibnet_1454291020638_/2016/01/31/000000/.job_201601311743_0001_1454291024454_tyang_wordcount.crc' -> `/home/tyang/cometcluster/logs/history/done/version-1/comet-17-14.ibnet_1454291020638_/2016/01/31/000000/.job_201601311743_0001_1454291024454_tyang_wordcount.crc'
+`/scratch/tyang/1569018/logs/history/done/version-1/comet-17-14.ibnet_1454291020638_/2016/01/31/000000/job_201601311743_0001_conf.xml' -> `/home/tyang/cometcluster/logs/history/done/version-1/comet-17-14.ibnet_1454291020638_/2016/01/31/000000/job_201601311743_0001_conf.xml'
+`/scratch/tyang/1569018/logs/history/done/version-1/comet-17-14.ibnet_1454291020638_/2016/01/31/000000/job_201601311743_0001_1454291024454_tyang_wordcount' -> `/home/tyang/cometcluster/logs/history/done/version-1/comet-17-14.ibnet_1454291020638_/2016/01/31/000000/job_201601311743_0001_1454291024454_tyang_wordcount'
+`/scratch/tyang/1569018/logs/hadoop-tyang-datanode-comet-17-14.sdsc.edu.out' -> `/home/tyang/cometcluster/logs/hadoop-tyang-datanode-comet-17-14.sdsc.edu.out'
+`/scratch/tyang/1569018/logs/userlogs' -> `/home/tyang/cometcluster/logs/userlogs'
+`/scratch/tyang/1569018/logs/userlogs/job_201601311743_0001' -> `/home/tyang/cometcluster/logs/userlogs/job_201601311743_0001'
+`/scratch/tyang/1569018/logs/userlogs/job_201601311743_0001/attempt_201601311743_0001_m_000000_0' -> `/home/tyang/cometcluster/logs/userlogs/job_201601311743_0001/attempt_201601311743_0001_m_000000_0'
+`/scratch/tyang/1569018/logs/userlogs/job_201601311743_0001/attempt_201601311743_0001_m_000000_0/stderr' -> `/home/tyang/cometcluster/logs/userlogs/job_201601311743_0001/attempt_201601311743_0001_m_000000_0/stderr'
+`/scratch/tyang/1569018/logs/userlogs/job_201601311743_0001/attempt_201601311743_0001_m_000000_0/stdout' -> `/home/tyang/cometcluster/logs/userlogs/job_201601311743_0001/attempt_201601311743_0001_m_000000_0/stdout'
+`/scratch/tyang/1569018/logs/userlogs/job_201601311743_0001/attempt_201601311743_0001_m_000000_0/log.index' -> `/home/tyang/cometcluster/logs/userlogs/job_201601311743_0001/attempt_201601311743_0001_m_000000_0/log.index'
+`/scratch/tyang/1569018/logs/userlogs/job_201601311743_0001/attempt_201601311743_0001_m_000000_0/syslog' -> `/home/tyang/cometcluster/logs/userlogs/job_201601311743_0001/attempt_201601311743_0001_m_000000_0/syslog'
+`/scratch/tyang/1569018/logs/userlogs/job_201601311743_0001/attempt_201601311743_0001_r_000000_0' -> `/home/tyang/cometcluster/logs/userlogs/job_201601311743_0001/attempt_201601311743_0001_r_000000_0'
+`/scratch/tyang/1569018/logs/userlogs/job_201601311743_0001/attempt_201601311743_0001_r_000000_0/stderr' -> `/home/tyang/cometcluster/logs/userlogs/job_201601311743_0001/attempt_201601311743_0001_r_000000_0/stderr'
+`/scratch/tyang/1569018/logs/userlogs/job_201601311743_0001/attempt_201601311743_0001_r_000000_0/stdout' -> `/home/tyang/cometcluster/logs/userlogs/job_201601311743_0001/attempt_201601311743_0001_r_000000_0/stdout'
+`/scratch/tyang/1569018/logs/userlogs/job_201601311743_0001/attempt_201601311743_0001_r_000000_0/log.index' -> `/home/tyang/cometcluster/logs/userlogs/job_201601311743_0001/attempt_201601311743_0001_r_000000_0/log.index'
+`/scratch/tyang/1569018/logs/userlogs/job_201601311743_0001/attempt_201601311743_0001_r_000000_0/syslog' -> `/home/tyang/cometcluster/logs/userlogs/job_201601311743_0001/attempt_201601311743_0001_r_000000_0/syslog'
+`/scratch/tyang/1569018/logs/userlogs/job_201601311743_0001/attempt_201601311743_0001_m_000001_0' -> `/home/tyang/cometcluster/logs/userlogs/job_201601311743_0001/attempt_201601311743_0001_m_000001_0'
+`/scratch/tyang/1569018/logs/userlogs/job_201601311743_0001/attempt_201601311743_0001_m_000001_0/stderr' -> `/home/tyang/cometcluster/logs/userlogs/job_201601311743_0001/attempt_201601311743_0001_m_000001_0/stderr'
+`/scratch/tyang/1569018/logs/userlogs/job_201601311743_0001/attempt_201601311743_0001_m_000001_0/stdout' -> `/home/tyang/cometcluster/logs/userlogs/job_201601311743_0001/attempt_201601311743_0001_m_000001_0/stdout'
+`/scratch/tyang/1569018/logs/userlogs/job_201601311743_0001/attempt_201601311743_0001_m_000001_0/log.index' -> `/home/tyang/cometcluster/logs/userlogs/job_201601311743_0001/attempt_201601311743_0001_m_000001_0/log.index'
+`/scratch/tyang/1569018/logs/userlogs/job_201601311743_0001/attempt_201601311743_0001_m_000001_0/syslog' -> `/home/tyang/cometcluster/logs/userlogs/job_201601311743_0001/attempt_201601311743_0001_m_000001_0/syslog'
+`/scratch/tyang/1569018/logs/userlogs/job_201601311743_0001/job-acls.xml' -> `/home/tyang/cometcluster/logs/userlogs/job_201601311743_0001/job-acls.xml'
+`/scratch/tyang/1569018/logs/userlogs/job_201601311743_0001/attempt_201601311743_0001_m_000002_0' -> `/home/tyang/cometcluster/logs/userlogs/job_201601311743_0001/attempt_201601311743_0001_m_000002_0'
+`/scratch/tyang/1569018/logs/userlogs/job_201601311743_0001/attempt_201601311743_0001_m_000002_0/stderr' -> `/home/tyang/cometcluster/logs/userlogs/job_201601311743_0001/attempt_201601311743_0001_m_000002_0/stderr'
+`/scratch/tyang/1569018/logs/userlogs/job_201601311743_0001/attempt_201601311743_0001_m_000002_0/stdout' -> `/home/tyang/cometcluster/logs/userlogs/job_201601311743_0001/attempt_201601311743_0001_m_000002_0/stdout'
+`/scratch/tyang/1569018/logs/userlogs/job_201601311743_0001/attempt_201601311743_0001_m_000002_0/log.index' -> `/home/tyang/cometcluster/logs/userlogs/job_201601311743_0001/attempt_201601311743_0001_m_000002_0/log.index'
+`/scratch/tyang/1569018/logs/userlogs/job_201601311743_0001/attempt_201601311743_0001_m_000002_0/syslog' -> `/home/tyang/cometcluster/logs/userlogs/job_201601311743_0001/attempt_201601311743_0001_m_000002_0/syslog'
+`/scratch/tyang/1569018/logs/hadoop-tyang-tasktracker-comet-17-14.sdsc.edu.log' -> `/home/tyang/cometcluster/logs/hadoop-tyang-tasktracker-comet-17-14.sdsc.edu.log'
+`/scratch/tyang/1569018/logs/hadoop-tyang-jobtracker-comet-17-14.out' -> `/home/tyang/cometcluster/logs/hadoop-tyang-jobtracker-comet-17-14.out'
+`/scratch/tyang/1569018/logs/hadoop-tyang-secondarynamenode-comet-17-14.sdsc.edu.out' -> `/home/tyang/cometcluster/logs/hadoop-tyang-secondarynamenode-comet-17-14.sdsc.edu.out'
+`/scratch/tyang/1569018/logs/hadoop-tyang-jobtracker-comet-17-14.log' -> `/home/tyang/cometcluster/logs/hadoop-tyang-jobtracker-comet-17-14.log'
+`/scratch/tyang/1569018/logs/job_201601311743_0001_conf.xml' -> `/home/tyang/cometcluster/logs/job_201601311743_0001_conf.xml'
+`/scratch/tyang/1569018/logs/hadoop-tyang-tasktracker-comet-17-14.sdsc.edu.out' -> `/home/tyang/cometcluster/logs/hadoop-tyang-tasktracker-comet-17-14.sdsc.edu.out'
+`/scratch/tyang/1569018/logs/hadoop-tyang-secondarynamenode-comet-17-14.sdsc.edu.log' -> `/home/tyang/cometcluster/logs/hadoop-tyang-secondarynamenode-comet-17-14.sdsc.edu.log'
+`/scratch/tyang/1569018/logs/hadoop-tyang-namenode-comet-17-14.out' -> `/home/tyang/cometcluster/logs/hadoop-tyang-namenode-comet-17-14.out'
+`/scratch/tyang/1569018/logs/hadoop-tyang-namenode-comet-17-14.log' -> `/home/tyang/cometcluster/logs/hadoop-tyang-namenode-comet-17-14.log'
+`/scratch/tyang/1569018/logs/hadoop-tyang-datanode-comet-17-14.sdsc.edu.log' -> `/home/tyang/cometcluster/logs/hadoop-tyang-datanode-comet-17-14.sdsc.edu.log'
+removed `/scratch/tyang/1569018/mapred_scratch/userlogs/job_201601311743_0001/attempt_201601311743_0001_m_000000_0/stderr'
+removed `/scratch/tyang/1569018/mapred_scratch/userlogs/job_201601311743_0001/attempt_201601311743_0001_m_000000_0/stdout'
+removed `/scratch/tyang/1569018/mapred_scratch/userlogs/job_201601311743_0001/attempt_201601311743_0001_m_000000_0/log.index'
+removed `/scratch/tyang/1569018/mapred_scratch/userlogs/job_201601311743_0001/attempt_201601311743_0001_m_000000_0/syslog'
+removed directory: `/scratch/tyang/1569018/mapred_scratch/userlogs/job_201601311743_0001/attempt_201601311743_0001_m_000000_0'
+removed `/scratch/tyang/1569018/mapred_scratch/userlogs/job_201601311743_0001/attempt_201601311743_0001_r_000000_0/stderr'
+removed `/scratch/tyang/1569018/mapred_scratch/userlogs/job_201601311743_0001/attempt_201601311743_0001_r_000000_0/stdout'
+removed `/scratch/tyang/1569018/mapred_scratch/userlogs/job_201601311743_0001/attempt_201601311743_0001_r_000000_0/log.index'
+removed `/scratch/tyang/1569018/mapred_scratch/userlogs/job_201601311743_0001/attempt_201601311743_0001_r_000000_0/syslog'
+removed directory: `/scratch/tyang/1569018/mapred_scratch/userlogs/job_201601311743_0001/attempt_201601311743_0001_r_000000_0'
+removed `/scratch/tyang/1569018/mapred_scratch/userlogs/job_201601311743_0001/attempt_201601311743_0001_m_000001_0/stderr'
+removed `/scratch/tyang/1569018/mapred_scratch/userlogs/job_201601311743_0001/attempt_201601311743_0001_m_000001_0/stdout'
+removed `/scratch/tyang/1569018/mapred_scratch/userlogs/job_201601311743_0001/attempt_201601311743_0001_m_000001_0/log.index'
+removed `/scratch/tyang/1569018/mapred_scratch/userlogs/job_201601311743_0001/attempt_201601311743_0001_m_000001_0/syslog'
+removed directory: `/scratch/tyang/1569018/mapred_scratch/userlogs/job_201601311743_0001/attempt_201601311743_0001_m_000001_0'
+removed `/scratch/tyang/1569018/mapred_scratch/userlogs/job_201601311743_0001/attempt_201601311743_0001_m_000002_0/stderr'
+removed `/scratch/tyang/1569018/mapred_scratch/userlogs/job_201601311743_0001/attempt_201601311743_0001_m_000002_0/stdout'
+removed `/scratch/tyang/1569018/mapred_scratch/userlogs/job_201601311743_0001/attempt_201601311743_0001_m_000002_0/log.index'
+removed `/scratch/tyang/1569018/mapred_scratch/userlogs/job_201601311743_0001/attempt_201601311743_0001_m_000002_0/syslog'
+removed directory: `/scratch/tyang/1569018/mapred_scratch/userlogs/job_201601311743_0001/attempt_201601311743_0001_m_000002_0'
+removed directory: `/scratch/tyang/1569018/mapred_scratch/userlogs/job_201601311743_0001'
+removed directory: `/scratch/tyang/1569018/mapred_scratch/userlogs'
+removed directory: `/scratch/tyang/1569018/mapred_scratch/jobTracker'
+removed directory: `/scratch/tyang/1569018/mapred_scratch/taskTracker/tyang/jobcache'
+removed directory: `/scratch/tyang/1569018/mapred_scratch/taskTracker/tyang/distcache'
+removed directory: `/scratch/tyang/1569018/mapred_scratch/taskTracker/tyang'
+removed directory: `/scratch/tyang/1569018/mapred_scratch/taskTracker'
+removed directory: `/scratch/tyang/1569018/mapred_scratch/tt_log_tmp'
+removed directory: `/scratch/tyang/1569018/mapred_scratch/ttprivate/taskTracker/tyang/jobcache'
+removed directory: `/scratch/tyang/1569018/mapred_scratch/ttprivate/taskTracker/tyang'
+removed directory: `/scratch/tyang/1569018/mapred_scratch/ttprivate/taskTracker'
+removed directory: `/scratch/tyang/1569018/mapred_scratch/ttprivate'
+removed directory: `/scratch/tyang/1569018/mapred_scratch'
+removed directory: `/scratch/tyang/1569018/tmp/dfs/namesecondary'
+removed directory: `/scratch/tyang/1569018/tmp/dfs'
+removed directory: `/scratch/tyang/1569018/tmp'
+removed `/scratch/tyang/1569018/namenode_data/previous.checkpoint/edits'
+removed `/scratch/tyang/1569018/namenode_data/previous.checkpoint/VERSION'
+removed `/scratch/tyang/1569018/namenode_data/previous.checkpoint/fsimage'
+removed `/scratch/tyang/1569018/namenode_data/previous.checkpoint/fstime'
+removed directory: `/scratch/tyang/1569018/namenode_data/previous.checkpoint'
+removed `/scratch/tyang/1569018/namenode_data/image/fsimage'
+removed directory: `/scratch/tyang/1569018/namenode_data/image'
+removed `/scratch/tyang/1569018/namenode_data/current/edits'
+removed `/scratch/tyang/1569018/namenode_data/current/VERSION'
+removed `/scratch/tyang/1569018/namenode_data/current/fsimage'
+removed `/scratch/tyang/1569018/namenode_data/current/fstime'
+removed directory: `/scratch/tyang/1569018/namenode_data/current'
+removed directory: `/scratch/tyang/1569018/namenode_data'
+removed directory: `/scratch/tyang/1569018/hdfs_data/detach'
+removed directory: `/scratch/tyang/1569018/hdfs_data/tmp'
+removed directory: `/scratch/tyang/1569018/hdfs_data/blocksBeingWritten'
+removed `/scratch/tyang/1569018/hdfs_data/storage'
+removed `/scratch/tyang/1569018/hdfs_data/current/blk_3950550749295281866'
+removed `/scratch/tyang/1569018/hdfs_data/current/blk_6656181119893709274'
+removed `/scratch/tyang/1569018/hdfs_data/current/blk_-285823849473299193'
+removed `/scratch/tyang/1569018/hdfs_data/current/blk_3950550749295281866_1001.meta'
+removed `/scratch/tyang/1569018/hdfs_data/current/blk_-285823849473299193_1010.meta'
+removed `/scratch/tyang/1569018/hdfs_data/current/blk_-4692383390862121745'
+removed `/scratch/tyang/1569018/hdfs_data/current/blk_6656181119893709274_1011.meta'
+removed `/scratch/tyang/1569018/hdfs_data/current/blk_-128277934557996034_1012.meta'
+removed `/scratch/tyang/1569018/hdfs_data/current/dncp_block_verification.log.curr'
+removed `/scratch/tyang/1569018/hdfs_data/current/VERSION'
+removed `/scratch/tyang/1569018/hdfs_data/current/blk_-4692383390862121745_1002.meta'
+removed `/scratch/tyang/1569018/hdfs_data/current/blk_-128277934557996034'
+removed directory: `/scratch/tyang/1569018/hdfs_data/current'
+removed directory: `/scratch/tyang/1569018/hdfs_data'
+removed `/scratch/tyang/1569018/pids/hadoop-tyang-namenode.pid'
+removed `/scratch/tyang/1569018/pids/hadoop-tyang-secondarynamenode.pid'
+removed `/scratch/tyang/1569018/pids/hadoop-tyang-tasktracker.pid'
+removed `/scratch/tyang/1569018/pids/hadoop-tyang-datanode.pid'
+removed `/scratch/tyang/1569018/pids/hadoop-tyang-jobtracker.pid'
+removed directory: `/scratch/tyang/1569018/pids'
+removed `/scratch/tyang/1569018/logs/history/done/version-1/comet-17-14.ibnet_1454291020638_/2016/01/31/000000/.job_201601311743_0001_conf.xml.crc'
+removed `/scratch/tyang/1569018/logs/history/done/version-1/comet-17-14.ibnet_1454291020638_/2016/01/31/000000/.job_201601311743_0001_1454291024454_tyang_wordcount.crc'
+removed `/scratch/tyang/1569018/logs/history/done/version-1/comet-17-14.ibnet_1454291020638_/2016/01/31/000000/job_201601311743_0001_conf.xml'
+removed `/scratch/tyang/1569018/logs/history/done/version-1/comet-17-14.ibnet_1454291020638_/2016/01/31/000000/job_201601311743_0001_1454291024454_tyang_wordcount'
+removed directory: `/scratch/tyang/1569018/logs/history/done/version-1/comet-17-14.ibnet_1454291020638_/2016/01/31/000000'
+removed directory: `/scratch/tyang/1569018/logs/history/done/version-1/comet-17-14.ibnet_1454291020638_/2016/01/31'
+removed directory: `/scratch/tyang/1569018/logs/history/done/version-1/comet-17-14.ibnet_1454291020638_/2016/01'
+removed directory: `/scratch/tyang/1569018/logs/history/done/version-1/comet-17-14.ibnet_1454291020638_/2016'
+removed directory: `/scratch/tyang/1569018/logs/history/done/version-1/comet-17-14.ibnet_1454291020638_'
+removed directory: `/scratch/tyang/1569018/logs/history/done/version-1'
+removed directory: `/scratch/tyang/1569018/logs/history/done'
+removed directory: `/scratch/tyang/1569018/logs/history'
+removed `/scratch/tyang/1569018/logs/hadoop-tyang-datanode-comet-17-14.sdsc.edu.out'
+removed `/scratch/tyang/1569018/logs/userlogs/job_201601311743_0001/attempt_201601311743_0001_m_000000_0'
+removed `/scratch/tyang/1569018/logs/userlogs/job_201601311743_0001/attempt_201601311743_0001_r_000000_0'
+removed `/scratch/tyang/1569018/logs/userlogs/job_201601311743_0001/attempt_201601311743_0001_m_000001_0'
+removed `/scratch/tyang/1569018/logs/userlogs/job_201601311743_0001/job-acls.xml'
+removed `/scratch/tyang/1569018/logs/userlogs/job_201601311743_0001/attempt_201601311743_0001_m_000002_0'
+removed directory: `/scratch/tyang/1569018/logs/userlogs/job_201601311743_0001'
+removed directory: `/scratch/tyang/1569018/logs/userlogs'
+removed `/scratch/tyang/1569018/logs/hadoop-tyang-tasktracker-comet-17-14.sdsc.edu.log'
+removed `/scratch/tyang/1569018/logs/hadoop-tyang-jobtracker-comet-17-14.out'
+removed `/scratch/tyang/1569018/logs/hadoop-tyang-secondarynamenode-comet-17-14.sdsc.edu.out'
+removed `/scratch/tyang/1569018/logs/hadoop-tyang-jobtracker-comet-17-14.log'
+removed `/scratch/tyang/1569018/logs/job_201601311743_0001_conf.xml'
+removed `/scratch/tyang/1569018/logs/hadoop-tyang-tasktracker-comet-17-14.sdsc.edu.out'
+removed `/scratch/tyang/1569018/logs/hadoop-tyang-secondarynamenode-comet-17-14.sdsc.edu.log'
+removed `/scratch/tyang/1569018/logs/hadoop-tyang-namenode-comet-17-14.out'
+removed `/scratch/tyang/1569018/logs/hadoop-tyang-namenode-comet-17-14.log'
+removed `/scratch/tyang/1569018/logs/hadoop-tyang-datanode-comet-17-14.sdsc.edu.log'
+removed directory: `/scratch/tyang/1569018/logs'
+removed directory: `/scratch/tyang/1569018/mapred_scratch/tt_log_tmp'
+removed directory: `/scratch/tyang/1569018/mapred_scratch/userlogs'
+removed directory: `/scratch/tyang/1569018/mapred_scratch/ttprivate'
+removed directory: `/scratch/tyang/1569018/mapred_scratch/taskTracker'
+removed directory: `/scratch/tyang/1569018/mapred_scratch'
+removed directory: `/scratch/tyang/1569018/hdfs_data/tmp'
+removed directory: `/scratch/tyang/1569018/hdfs_data/blocksBeingWritten'
+removed `/scratch/tyang/1569018/hdfs_data/current/VERSION'
+removed `/scratch/tyang/1569018/hdfs_data/current/blk_-4692383390862121745'
+removed `/scratch/tyang/1569018/hdfs_data/current/blk_3950550749295281866_1001.meta'
+removed `/scratch/tyang/1569018/hdfs_data/current/blk_3950550749295281866'
+removed `/scratch/tyang/1569018/hdfs_data/current/blk_6656181119893709274_1011.meta'
+removed `/scratch/tyang/1569018/hdfs_data/current/dncp_block_verification.log.curr'
+removed `/scratch/tyang/1569018/hdfs_data/current/blk_-128277934557996034_1012.meta'
+removed `/scratch/tyang/1569018/hdfs_data/current/blk_-285823849473299193_1010.meta'
+removed `/scratch/tyang/1569018/hdfs_data/current/blk_-4692383390862121745_1002.meta'
+removed `/scratch/tyang/1569018/hdfs_data/current/blk_-128277934557996034'
+removed `/scratch/tyang/1569018/hdfs_data/current/blk_6656181119893709274'
+removed `/scratch/tyang/1569018/hdfs_data/current/blk_-285823849473299193'
+removed directory: `/scratch/tyang/1569018/hdfs_data/current'
+removed `/scratch/tyang/1569018/hdfs_data/storage'
+removed directory: `/scratch/tyang/1569018/hdfs_data/detach'
+removed directory: `/scratch/tyang/1569018/hdfs_data'
+removed `/scratch/tyang/1569018/pids/hadoop-tyang-tasktracker.pid'
+removed `/scratch/tyang/1569018/pids/hadoop-tyang-datanode.pid'
+removed directory: `/scratch/tyang/1569018/pids'
+removed directory: `/scratch/tyang/1569018/logs/userlogs'
+removed `/scratch/tyang/1569018/logs/hadoop-tyang-datanode-comet-17-15.sdsc.edu.log'
+removed `/scratch/tyang/1569018/logs/hadoop-tyang-tasktracker-comet-17-15.sdsc.edu.log'
+removed `/scratch/tyang/1569018/logs/hadoop-tyang-datanode-comet-17-15.sdsc.edu.out'
+removed `/scratch/tyang/1569018/logs/hadoop-tyang-tasktracker-comet-17-15.sdsc.edu.out'
+removed directory: `/scratch/tyang/1569018/logs'
+removed directory: `/tmp/Jetty_0_0_0_0_50060_task____.2vcltf/jsp'
+removed directory: `/tmp/Jetty_0_0_0_0_50060_task____.2vcltf/.active'
+removed directory: `/tmp/Jetty_0_0_0_0_50060_task____.2vcltf'
+removed directory: `/tmp/Jetty_0_0_0_0_50090_secondary____y6aanv/jsp'
+removed directory: `/tmp/Jetty_0_0_0_0_50090_secondary____y6aanv/.active'
+removed directory: `/tmp/Jetty_0_0_0_0_50090_secondary____y6aanv'
+removed directory: `/tmp/Jetty_0_0_0_0_50030_job____yn7qmk/jsp'
+removed directory: `/tmp/Jetty_0_0_0_0_50030_job____yn7qmk/.active'
+removed directory: `/tmp/Jetty_0_0_0_0_50030_job____yn7qmk'
+removed directory: `/tmp/Jetty_0_0_0_0_50075_datanode____hwtdwq_453809263175625998/jsp'
+removed directory: `/tmp/Jetty_0_0_0_0_50075_datanode____hwtdwq_453809263175625998/.active'
+removed directory: `/tmp/Jetty_0_0_0_0_50075_datanode____hwtdwq_453809263175625998'
+removed directory: `/tmp/Jetty_0_0_0_0_50070_hdfs____w2cu08/jsp'
+removed directory: `/tmp/Jetty_0_0_0_0_50070_hdfs____w2cu08/.active'
+removed directory: `/tmp/Jetty_0_0_0_0_50070_hdfs____w2cu08'

@@ -1,0 +1,41 @@
+To produce  Java binary code, allocate a dedicate node and compile with "make" in that machine.
+	At comet, use the following command to allocate a node with 5-min timeout.
+	/share/apps/compute/interactive/qsubi.bash -p compute --nodes=1 --ntasks-per-node=1 -t 00:05:00 --export=ALL
+
+	That command is copied from /share/apps/compute/interactive/req.1x24.compute.
+
+
+
+To submit a job that runs the wordcount Java mapreduce code:
+
+	sbatch submit-hadoop-comet.sh
+
+To check the status of your job
+
+	squeue -u username 
+
+To cancel a submitted job
+
+	scancel job-id
+
+
+Some tips:
+
+** You have to request *all* 24 cores on the nodes. Hadoop is java
+    based and any memory limits start causing problems. Also, in the
+    compute partition you are charged for the whole node anyway.
+
+** Your script should delete the outout direcctory  if you want to rerun and copy out data 
+   to that directoy.  Otherwise  the Hadoop copy back fails because the file already exists.
+   The current script forces to remove the output directory "WC-output".
+
+** If you are running several Mapreduce jobs simultaneously, please make sure you choose different locations 
+for for the configuration files. Basically change the line:
+
+	export HADOOP_CONF_DIR=/home/$USER/cometcluster
+
+to point to different directories for each run. Otherwise the configuration from different jobs will overwrite 
+in the same directory and cause problems.
+
+
+

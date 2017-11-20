@@ -1,0 +1,260 @@
+myHadoop: Setting MH_IPOIB_TRANSFORM='s/\([^.]*\).*$/\1.ibnet/' from myhadoop.conf
+myHadoop: Setting MH_SCRATCH_DIR=/scratch/$USER/$SLURM_JOBID from myhadoop.conf
+myHadoop: Using HADOOP_HOME=/opt/hadoop/1.2.1
+myHadoop: Using MH_SCRATCH_DIR=/scratch/kirtib/12594478
+myHadoop: Using JAVA_HOME=/usr/java/latest
+myHadoop: Generating Hadoop configuration in directory in /home/kirtib/cometcluster...
+myHadoop: Designating comet-02-45.ibnet as master node (namenode, secondary namenode, and jobtracker)
+myHadoop: The following nodes will be slaves (datanode, tasktracer):
+comet-02-45.ibnet
+17/11/13 10:38:57 INFO namenode.NameNode: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting NameNode
+STARTUP_MSG:   host = comet-02-45.sdsc.edu/198.202.112.44
+STARTUP_MSG:   args = [-format, -nonInteractive, -force]
+STARTUP_MSG:   version = 1.2.1
+STARTUP_MSG:   build = https://svn.apache.org/repos/asf/hadoop/common/branches/branch-1.2 -r 1503152; compiled by 'mattf' on Mon Jul 22 15:23:09 PDT 2013
+STARTUP_MSG:   java = 1.8.0_60
+************************************************************/
+17/11/13 10:38:57 INFO util.GSet: Computing capacity for map BlocksMap
+17/11/13 10:38:57 INFO util.GSet: VM type       = 64-bit
+17/11/13 10:38:57 INFO util.GSet: 2.0% max memory = 1005060096
+17/11/13 10:38:57 INFO util.GSet: capacity      = 2^21 = 2097152 entries
+17/11/13 10:38:57 INFO util.GSet: recommended=2097152, actual=2097152
+17/11/13 10:38:58 INFO namenode.FSNamesystem: fsOwner=kirtib
+17/11/13 10:38:58 INFO namenode.FSNamesystem: supergroup=supergroup
+17/11/13 10:38:58 INFO namenode.FSNamesystem: isPermissionEnabled=true
+17/11/13 10:38:58 INFO namenode.FSNamesystem: dfs.block.invalidate.limit=100
+17/11/13 10:38:58 INFO namenode.FSNamesystem: isAccessTokenEnabled=false accessKeyUpdateInterval=0 min(s), accessTokenLifetime=0 min(s)
+17/11/13 10:38:58 INFO namenode.FSEditLog: dfs.namenode.edits.toleration.length = 0
+17/11/13 10:38:58 INFO namenode.NameNode: Caching file names occuring more than 10 times 
+17/11/13 10:38:59 INFO common.Storage: Image file /scratch/kirtib/12594478/namenode_data/current/fsimage of size 112 bytes saved in 0 seconds.
+17/11/13 10:38:59 INFO namenode.FSEditLog: closing edit log: position=4, editlog=/scratch/kirtib/12594478/namenode_data/current/edits
+17/11/13 10:38:59 INFO namenode.FSEditLog: close success: truncate to 4, editlog=/scratch/kirtib/12594478/namenode_data/current/edits
+17/11/13 10:38:59 INFO common.Storage: Storage directory /scratch/kirtib/12594478/namenode_data has been successfully formatted.
+17/11/13 10:38:59 INFO namenode.NameNode: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down NameNode at comet-02-45.sdsc.edu/198.202.112.44
+************************************************************/
+starting namenode, logging to /scratch/kirtib/12594478/logs/hadoop-kirtib-namenode-comet-02-45.out
+comet-02-45.ibnet: starting datanode, logging to /scratch/kirtib/12594478/logs/hadoop-kirtib-datanode-comet-02-45.sdsc.edu.out
+comet-02-45.ibnet: starting secondarynamenode, logging to /scratch/kirtib/12594478/logs/hadoop-kirtib-secondarynamenode-comet-02-45.sdsc.edu.out
+starting jobtracker, logging to /scratch/kirtib/12594478/logs/hadoop-kirtib-jobtracker-comet-02-45.out
+comet-02-45.ibnet: starting tasktracker, logging to /scratch/kirtib/12594478/logs/hadoop-kirtib-tasktracker-comet-02-45.sdsc.edu.out
+17/11/13 10:39:07 WARN mapred.JobClient: Use GenericOptionsParser for parsing the arguments. Applications should implement Tool for the same.
+17/11/13 10:39:07 INFO input.FileInputFormat: Total input paths to process : 1
+17/11/13 10:39:07 INFO util.NativeCodeLoader: Loaded the native-hadoop library
+17/11/13 10:39:07 WARN snappy.LoadSnappy: Snappy native library not loaded
+17/11/13 10:39:08 INFO mapred.JobClient: Running job: job_201711131039_0001
+17/11/13 10:39:09 INFO mapred.JobClient:  map 0% reduce 0%
+17/11/13 10:39:12 INFO mapred.JobClient:  map 100% reduce 0%
+17/11/13 10:39:19 INFO mapred.JobClient:  map 100% reduce 33%
+17/11/13 10:39:20 INFO mapred.JobClient:  map 100% reduce 100%
+17/11/13 10:39:20 INFO mapred.JobClient: Job complete: job_201711131039_0001
+17/11/13 10:39:20 INFO mapred.JobClient: Counters: 29
+17/11/13 10:39:20 INFO mapred.JobClient:   Map-Reduce Framework
+17/11/13 10:39:20 INFO mapred.JobClient:     Spilled Records=46
+17/11/13 10:39:20 INFO mapred.JobClient:     Map output materialized bytes=253
+17/11/13 10:39:20 INFO mapred.JobClient:     Reduce input records=23
+17/11/13 10:39:20 INFO mapred.JobClient:     Virtual memory (bytes) snapshot=4086992896
+17/11/13 10:39:20 INFO mapred.JobClient:     Map input records=4
+17/11/13 10:39:20 INFO mapred.JobClient:     SPLIT_RAW_BYTES=122
+17/11/13 10:39:20 INFO mapred.JobClient:     Map output bytes=201
+17/11/13 10:39:20 INFO mapred.JobClient:     Reduce shuffle bytes=253
+17/11/13 10:39:20 INFO mapred.JobClient:     Physical memory (bytes) snapshot=384053248
+17/11/13 10:39:20 INFO mapred.JobClient:     Reduce input groups=15
+17/11/13 10:39:20 INFO mapred.JobClient:     Combine output records=0
+17/11/13 10:39:20 INFO mapred.JobClient:     Reduce output records=15
+17/11/13 10:39:20 INFO mapred.JobClient:     Map output records=23
+17/11/13 10:39:20 INFO mapred.JobClient:     Combine input records=0
+17/11/13 10:39:20 INFO mapred.JobClient:     CPU time spent (ms)=1530
+17/11/13 10:39:20 INFO mapred.JobClient:     Total committed heap usage (bytes)=402653184
+17/11/13 10:39:20 INFO mapred.JobClient:   File Input Format Counters 
+17/11/13 10:39:20 INFO mapred.JobClient:     Bytes Read=112
+17/11/13 10:39:20 INFO mapred.JobClient:   FileSystemCounters
+17/11/13 10:39:20 INFO mapred.JobClient:     HDFS_BYTES_READ=234
+17/11/13 10:39:20 INFO mapred.JobClient:     FILE_BYTES_WRITTEN=116617
+17/11/13 10:39:20 INFO mapred.JobClient:     FILE_BYTES_READ=253
+17/11/13 10:39:20 INFO mapred.JobClient:     HDFS_BYTES_WRITTEN=103
+17/11/13 10:39:20 INFO mapred.JobClient:   Job Counters 
+17/11/13 10:39:20 INFO mapred.JobClient:     Launched map tasks=1
+17/11/13 10:39:20 INFO mapred.JobClient:     Launched reduce tasks=1
+17/11/13 10:39:20 INFO mapred.JobClient:     SLOTS_MILLIS_REDUCES=7950
+17/11/13 10:39:20 INFO mapred.JobClient:     Total time spent by all reduces waiting after reserving slots (ms)=0
+17/11/13 10:39:20 INFO mapred.JobClient:     SLOTS_MILLIS_MAPS=2701
+17/11/13 10:39:20 INFO mapred.JobClient:     Total time spent by all maps waiting after reserving slots (ms)=0
+17/11/13 10:39:20 INFO mapred.JobClient:     Data-local map tasks=1
+17/11/13 10:39:20 INFO mapred.JobClient:   File Output Format Counters 
+17/11/13 10:39:20 INFO mapred.JobClient:     Bytes Written=103
+stopping jobtracker
+comet-02-45.ibnet: stopping tasktracker
+stopping namenode
+comet-02-45.ibnet: stopping datanode
+comet-02-45.ibnet: stopping secondarynamenode
+Copying Hadoop logs back to /home/kirtib/cometcluster/logs...
+`/scratch/kirtib/12594478/logs' -> `/home/kirtib/cometcluster/logs'
+`/scratch/kirtib/12594478/logs/history' -> `/home/kirtib/cometcluster/logs/history'
+`/scratch/kirtib/12594478/logs/history/done' -> `/home/kirtib/cometcluster/logs/history/done'
+`/scratch/kirtib/12594478/logs/history/done/version-1' -> `/home/kirtib/cometcluster/logs/history/done/version-1'
+`/scratch/kirtib/12594478/logs/history/done/version-1/comet-02-45.ibnet_1510598344474_' -> `/home/kirtib/cometcluster/logs/history/done/version-1/comet-02-45.ibnet_1510598344474_'
+`/scratch/kirtib/12594478/logs/history/done/version-1/comet-02-45.ibnet_1510598344474_/2017' -> `/home/kirtib/cometcluster/logs/history/done/version-1/comet-02-45.ibnet_1510598344474_/2017'
+`/scratch/kirtib/12594478/logs/history/done/version-1/comet-02-45.ibnet_1510598344474_/2017/11' -> `/home/kirtib/cometcluster/logs/history/done/version-1/comet-02-45.ibnet_1510598344474_/2017/11'
+`/scratch/kirtib/12594478/logs/history/done/version-1/comet-02-45.ibnet_1510598344474_/2017/11/13' -> `/home/kirtib/cometcluster/logs/history/done/version-1/comet-02-45.ibnet_1510598344474_/2017/11/13'
+`/scratch/kirtib/12594478/logs/history/done/version-1/comet-02-45.ibnet_1510598344474_/2017/11/13/000000' -> `/home/kirtib/cometcluster/logs/history/done/version-1/comet-02-45.ibnet_1510598344474_/2017/11/13/000000'
+`/scratch/kirtib/12594478/logs/history/done/version-1/comet-02-45.ibnet_1510598344474_/2017/11/13/000000/job_201711131039_0001_conf.xml' -> `/home/kirtib/cometcluster/logs/history/done/version-1/comet-02-45.ibnet_1510598344474_/2017/11/13/000000/job_201711131039_0001_conf.xml'
+`/scratch/kirtib/12594478/logs/history/done/version-1/comet-02-45.ibnet_1510598344474_/2017/11/13/000000/.job_201711131039_0001_conf.xml.crc' -> `/home/kirtib/cometcluster/logs/history/done/version-1/comet-02-45.ibnet_1510598344474_/2017/11/13/000000/.job_201711131039_0001_conf.xml.crc'
+`/scratch/kirtib/12594478/logs/history/done/version-1/comet-02-45.ibnet_1510598344474_/2017/11/13/000000/.job_201711131039_0001_1510598348089_kirtib_wordcount.crc' -> `/home/kirtib/cometcluster/logs/history/done/version-1/comet-02-45.ibnet_1510598344474_/2017/11/13/000000/.job_201711131039_0001_1510598348089_kirtib_wordcount.crc'
+`/scratch/kirtib/12594478/logs/history/done/version-1/comet-02-45.ibnet_1510598344474_/2017/11/13/000000/job_201711131039_0001_1510598348089_kirtib_wordcount' -> `/home/kirtib/cometcluster/logs/history/done/version-1/comet-02-45.ibnet_1510598344474_/2017/11/13/000000/job_201711131039_0001_1510598348089_kirtib_wordcount'
+`/scratch/kirtib/12594478/logs/hadoop-kirtib-namenode-comet-02-45.log' -> `/home/kirtib/cometcluster/logs/hadoop-kirtib-namenode-comet-02-45.log'
+`/scratch/kirtib/12594478/logs/hadoop-kirtib-jobtracker-comet-02-45.out' -> `/home/kirtib/cometcluster/logs/hadoop-kirtib-jobtracker-comet-02-45.out'
+`/scratch/kirtib/12594478/logs/hadoop-kirtib-datanode-comet-02-45.sdsc.edu.log' -> `/home/kirtib/cometcluster/logs/hadoop-kirtib-datanode-comet-02-45.sdsc.edu.log'
+`/scratch/kirtib/12594478/logs/hadoop-kirtib-tasktracker-comet-02-45.sdsc.edu.out' -> `/home/kirtib/cometcluster/logs/hadoop-kirtib-tasktracker-comet-02-45.sdsc.edu.out'
+`/scratch/kirtib/12594478/logs/hadoop-kirtib-secondarynamenode-comet-02-45.sdsc.edu.log' -> `/home/kirtib/cometcluster/logs/hadoop-kirtib-secondarynamenode-comet-02-45.sdsc.edu.log'
+`/scratch/kirtib/12594478/logs/hadoop-kirtib-secondarynamenode-comet-02-45.sdsc.edu.out' -> `/home/kirtib/cometcluster/logs/hadoop-kirtib-secondarynamenode-comet-02-45.sdsc.edu.out'
+`/scratch/kirtib/12594478/logs/job_201711131039_0001_conf.xml' -> `/home/kirtib/cometcluster/logs/job_201711131039_0001_conf.xml'
+`/scratch/kirtib/12594478/logs/hadoop-kirtib-jobtracker-comet-02-45.log' -> `/home/kirtib/cometcluster/logs/hadoop-kirtib-jobtracker-comet-02-45.log'
+`/scratch/kirtib/12594478/logs/hadoop-kirtib-tasktracker-comet-02-45.sdsc.edu.log' -> `/home/kirtib/cometcluster/logs/hadoop-kirtib-tasktracker-comet-02-45.sdsc.edu.log'
+`/scratch/kirtib/12594478/logs/hadoop-kirtib-datanode-comet-02-45.sdsc.edu.out' -> `/home/kirtib/cometcluster/logs/hadoop-kirtib-datanode-comet-02-45.sdsc.edu.out'
+`/scratch/kirtib/12594478/logs/userlogs' -> `/home/kirtib/cometcluster/logs/userlogs'
+`/scratch/kirtib/12594478/logs/userlogs/job_201711131039_0001' -> `/home/kirtib/cometcluster/logs/userlogs/job_201711131039_0001'
+`/scratch/kirtib/12594478/logs/userlogs/job_201711131039_0001/attempt_201711131039_0001_m_000002_0' -> `/home/kirtib/cometcluster/logs/userlogs/job_201711131039_0001/attempt_201711131039_0001_m_000002_0'
+`/scratch/kirtib/12594478/logs/userlogs/job_201711131039_0001/attempt_201711131039_0001_m_000002_0/log.index' -> `/home/kirtib/cometcluster/logs/userlogs/job_201711131039_0001/attempt_201711131039_0001_m_000002_0/log.index'
+`/scratch/kirtib/12594478/logs/userlogs/job_201711131039_0001/attempt_201711131039_0001_m_000002_0/stderr' -> `/home/kirtib/cometcluster/logs/userlogs/job_201711131039_0001/attempt_201711131039_0001_m_000002_0/stderr'
+`/scratch/kirtib/12594478/logs/userlogs/job_201711131039_0001/attempt_201711131039_0001_m_000002_0/stdout' -> `/home/kirtib/cometcluster/logs/userlogs/job_201711131039_0001/attempt_201711131039_0001_m_000002_0/stdout'
+`/scratch/kirtib/12594478/logs/userlogs/job_201711131039_0001/attempt_201711131039_0001_m_000002_0/syslog' -> `/home/kirtib/cometcluster/logs/userlogs/job_201711131039_0001/attempt_201711131039_0001_m_000002_0/syslog'
+`/scratch/kirtib/12594478/logs/userlogs/job_201711131039_0001/job-acls.xml' -> `/home/kirtib/cometcluster/logs/userlogs/job_201711131039_0001/job-acls.xml'
+`/scratch/kirtib/12594478/logs/userlogs/job_201711131039_0001/attempt_201711131039_0001_r_000000_0' -> `/home/kirtib/cometcluster/logs/userlogs/job_201711131039_0001/attempt_201711131039_0001_r_000000_0'
+`/scratch/kirtib/12594478/logs/userlogs/job_201711131039_0001/attempt_201711131039_0001_r_000000_0/log.index' -> `/home/kirtib/cometcluster/logs/userlogs/job_201711131039_0001/attempt_201711131039_0001_r_000000_0/log.index'
+`/scratch/kirtib/12594478/logs/userlogs/job_201711131039_0001/attempt_201711131039_0001_r_000000_0/stderr' -> `/home/kirtib/cometcluster/logs/userlogs/job_201711131039_0001/attempt_201711131039_0001_r_000000_0/stderr'
+`/scratch/kirtib/12594478/logs/userlogs/job_201711131039_0001/attempt_201711131039_0001_r_000000_0/syslog' -> `/home/kirtib/cometcluster/logs/userlogs/job_201711131039_0001/attempt_201711131039_0001_r_000000_0/syslog'
+`/scratch/kirtib/12594478/logs/userlogs/job_201711131039_0001/attempt_201711131039_0001_r_000000_0/stdout' -> `/home/kirtib/cometcluster/logs/userlogs/job_201711131039_0001/attempt_201711131039_0001_r_000000_0/stdout'
+`/scratch/kirtib/12594478/logs/userlogs/job_201711131039_0001/attempt_201711131039_0001_m_000001_0' -> `/home/kirtib/cometcluster/logs/userlogs/job_201711131039_0001/attempt_201711131039_0001_m_000001_0'
+`/scratch/kirtib/12594478/logs/userlogs/job_201711131039_0001/attempt_201711131039_0001_m_000001_0/stderr' -> `/home/kirtib/cometcluster/logs/userlogs/job_201711131039_0001/attempt_201711131039_0001_m_000001_0/stderr'
+`/scratch/kirtib/12594478/logs/userlogs/job_201711131039_0001/attempt_201711131039_0001_m_000001_0/stdout' -> `/home/kirtib/cometcluster/logs/userlogs/job_201711131039_0001/attempt_201711131039_0001_m_000001_0/stdout'
+`/scratch/kirtib/12594478/logs/userlogs/job_201711131039_0001/attempt_201711131039_0001_m_000001_0/syslog' -> `/home/kirtib/cometcluster/logs/userlogs/job_201711131039_0001/attempt_201711131039_0001_m_000001_0/syslog'
+`/scratch/kirtib/12594478/logs/userlogs/job_201711131039_0001/attempt_201711131039_0001_m_000001_0/log.index' -> `/home/kirtib/cometcluster/logs/userlogs/job_201711131039_0001/attempt_201711131039_0001_m_000001_0/log.index'
+`/scratch/kirtib/12594478/logs/userlogs/job_201711131039_0001/attempt_201711131039_0001_m_000000_0' -> `/home/kirtib/cometcluster/logs/userlogs/job_201711131039_0001/attempt_201711131039_0001_m_000000_0'
+`/scratch/kirtib/12594478/logs/userlogs/job_201711131039_0001/attempt_201711131039_0001_m_000000_0/log.index' -> `/home/kirtib/cometcluster/logs/userlogs/job_201711131039_0001/attempt_201711131039_0001_m_000000_0/log.index'
+`/scratch/kirtib/12594478/logs/userlogs/job_201711131039_0001/attempt_201711131039_0001_m_000000_0/stderr' -> `/home/kirtib/cometcluster/logs/userlogs/job_201711131039_0001/attempt_201711131039_0001_m_000000_0/stderr'
+`/scratch/kirtib/12594478/logs/userlogs/job_201711131039_0001/attempt_201711131039_0001_m_000000_0/stdout' -> `/home/kirtib/cometcluster/logs/userlogs/job_201711131039_0001/attempt_201711131039_0001_m_000000_0/stdout'
+`/scratch/kirtib/12594478/logs/userlogs/job_201711131039_0001/attempt_201711131039_0001_m_000000_0/syslog' -> `/home/kirtib/cometcluster/logs/userlogs/job_201711131039_0001/attempt_201711131039_0001_m_000000_0/syslog'
+`/scratch/kirtib/12594478/logs/hadoop-kirtib-namenode-comet-02-45.out' -> `/home/kirtib/cometcluster/logs/hadoop-kirtib-namenode-comet-02-45.out'
+removed directory: `/scratch/kirtib/12594478/mapred_scratch/jobTracker'
+removed directory: `/scratch/kirtib/12594478/mapred_scratch/taskTracker/kirtib/jobcache'
+removed directory: `/scratch/kirtib/12594478/mapred_scratch/taskTracker/kirtib/distcache'
+removed directory: `/scratch/kirtib/12594478/mapred_scratch/taskTracker/kirtib'
+removed directory: `/scratch/kirtib/12594478/mapred_scratch/taskTracker'
+removed directory: `/scratch/kirtib/12594478/mapred_scratch/ttprivate/taskTracker/kirtib/jobcache'
+removed directory: `/scratch/kirtib/12594478/mapred_scratch/ttprivate/taskTracker/kirtib'
+removed directory: `/scratch/kirtib/12594478/mapred_scratch/ttprivate/taskTracker'
+removed directory: `/scratch/kirtib/12594478/mapred_scratch/ttprivate'
+removed directory: `/scratch/kirtib/12594478/mapred_scratch/tt_log_tmp'
+removed `/scratch/kirtib/12594478/mapred_scratch/userlogs/job_201711131039_0001/attempt_201711131039_0001_m_000000_0/log.index'
+removed `/scratch/kirtib/12594478/mapred_scratch/userlogs/job_201711131039_0001/attempt_201711131039_0001_m_000000_0/stderr'
+removed `/scratch/kirtib/12594478/mapred_scratch/userlogs/job_201711131039_0001/attempt_201711131039_0001_m_000000_0/stdout'
+removed `/scratch/kirtib/12594478/mapred_scratch/userlogs/job_201711131039_0001/attempt_201711131039_0001_m_000000_0/syslog'
+removed directory: `/scratch/kirtib/12594478/mapred_scratch/userlogs/job_201711131039_0001/attempt_201711131039_0001_m_000000_0'
+removed `/scratch/kirtib/12594478/mapred_scratch/userlogs/job_201711131039_0001/attempt_201711131039_0001_m_000001_0/stderr'
+removed `/scratch/kirtib/12594478/mapred_scratch/userlogs/job_201711131039_0001/attempt_201711131039_0001_m_000001_0/stdout'
+removed `/scratch/kirtib/12594478/mapred_scratch/userlogs/job_201711131039_0001/attempt_201711131039_0001_m_000001_0/syslog'
+removed `/scratch/kirtib/12594478/mapred_scratch/userlogs/job_201711131039_0001/attempt_201711131039_0001_m_000001_0/log.index'
+removed directory: `/scratch/kirtib/12594478/mapred_scratch/userlogs/job_201711131039_0001/attempt_201711131039_0001_m_000001_0'
+removed `/scratch/kirtib/12594478/mapred_scratch/userlogs/job_201711131039_0001/attempt_201711131039_0001_r_000000_0/log.index'
+removed `/scratch/kirtib/12594478/mapred_scratch/userlogs/job_201711131039_0001/attempt_201711131039_0001_r_000000_0/stderr'
+removed `/scratch/kirtib/12594478/mapred_scratch/userlogs/job_201711131039_0001/attempt_201711131039_0001_r_000000_0/syslog'
+removed `/scratch/kirtib/12594478/mapred_scratch/userlogs/job_201711131039_0001/attempt_201711131039_0001_r_000000_0/stdout'
+removed directory: `/scratch/kirtib/12594478/mapred_scratch/userlogs/job_201711131039_0001/attempt_201711131039_0001_r_000000_0'
+removed `/scratch/kirtib/12594478/mapred_scratch/userlogs/job_201711131039_0001/attempt_201711131039_0001_m_000002_0/log.index'
+removed `/scratch/kirtib/12594478/mapred_scratch/userlogs/job_201711131039_0001/attempt_201711131039_0001_m_000002_0/stderr'
+removed `/scratch/kirtib/12594478/mapred_scratch/userlogs/job_201711131039_0001/attempt_201711131039_0001_m_000002_0/stdout'
+removed `/scratch/kirtib/12594478/mapred_scratch/userlogs/job_201711131039_0001/attempt_201711131039_0001_m_000002_0/syslog'
+removed directory: `/scratch/kirtib/12594478/mapred_scratch/userlogs/job_201711131039_0001/attempt_201711131039_0001_m_000002_0'
+removed directory: `/scratch/kirtib/12594478/mapred_scratch/userlogs/job_201711131039_0001'
+removed directory: `/scratch/kirtib/12594478/mapred_scratch/userlogs'
+removed directory: `/scratch/kirtib/12594478/mapred_scratch'
+removed directory: `/scratch/kirtib/12594478/tmp/dfs/namesecondary'
+removed directory: `/scratch/kirtib/12594478/tmp/dfs'
+removed directory: `/scratch/kirtib/12594478/tmp'
+removed `/scratch/kirtib/12594478/namenode_data/previous.checkpoint/fsimage'
+removed `/scratch/kirtib/12594478/namenode_data/previous.checkpoint/edits'
+removed `/scratch/kirtib/12594478/namenode_data/previous.checkpoint/VERSION'
+removed `/scratch/kirtib/12594478/namenode_data/previous.checkpoint/fstime'
+removed directory: `/scratch/kirtib/12594478/namenode_data/previous.checkpoint'
+removed `/scratch/kirtib/12594478/namenode_data/image/fsimage'
+removed directory: `/scratch/kirtib/12594478/namenode_data/image'
+removed `/scratch/kirtib/12594478/namenode_data/current/fsimage'
+removed `/scratch/kirtib/12594478/namenode_data/current/VERSION'
+removed `/scratch/kirtib/12594478/namenode_data/current/fstime'
+removed `/scratch/kirtib/12594478/namenode_data/current/edits'
+removed directory: `/scratch/kirtib/12594478/namenode_data/current'
+removed directory: `/scratch/kirtib/12594478/namenode_data'
+removed directory: `/scratch/kirtib/12594478/hdfs_data/detach'
+removed directory: `/scratch/kirtib/12594478/hdfs_data/blocksBeingWritten'
+removed directory: `/scratch/kirtib/12594478/hdfs_data/tmp'
+removed `/scratch/kirtib/12594478/hdfs_data/current/blk_-3237058660745846087'
+removed `/scratch/kirtib/12594478/hdfs_data/current/blk_-8429880610618245058_1003.meta'
+removed `/scratch/kirtib/12594478/hdfs_data/current/blk_3773267586682190263_1012.meta'
+removed `/scratch/kirtib/12594478/hdfs_data/current/blk_-3237058660745846087_1014.meta'
+removed `/scratch/kirtib/12594478/hdfs_data/current/VERSION'
+removed `/scratch/kirtib/12594478/hdfs_data/current/blk_3773267586682190263'
+removed `/scratch/kirtib/12594478/hdfs_data/current/blk_-8429880610618245058'
+removed `/scratch/kirtib/12594478/hdfs_data/current/dncp_block_verification.log.curr'
+removed `/scratch/kirtib/12594478/hdfs_data/current/blk_-1359541993206310494_1004.meta'
+removed `/scratch/kirtib/12594478/hdfs_data/current/blk_-1230591243665667390_1013.meta'
+removed `/scratch/kirtib/12594478/hdfs_data/current/blk_-1230591243665667390'
+removed `/scratch/kirtib/12594478/hdfs_data/current/blk_-1359541993206310494'
+removed directory: `/scratch/kirtib/12594478/hdfs_data/current'
+removed `/scratch/kirtib/12594478/hdfs_data/storage'
+removed directory: `/scratch/kirtib/12594478/hdfs_data'
+removed `/scratch/kirtib/12594478/pids/hadoop-kirtib-secondarynamenode.pid'
+removed `/scratch/kirtib/12594478/pids/hadoop-kirtib-namenode.pid'
+removed `/scratch/kirtib/12594478/pids/hadoop-kirtib-datanode.pid'
+removed `/scratch/kirtib/12594478/pids/hadoop-kirtib-tasktracker.pid'
+removed `/scratch/kirtib/12594478/pids/hadoop-kirtib-jobtracker.pid'
+removed directory: `/scratch/kirtib/12594478/pids'
+removed `/scratch/kirtib/12594478/logs/history/done/version-1/comet-02-45.ibnet_1510598344474_/2017/11/13/000000/job_201711131039_0001_conf.xml'
+removed `/scratch/kirtib/12594478/logs/history/done/version-1/comet-02-45.ibnet_1510598344474_/2017/11/13/000000/.job_201711131039_0001_conf.xml.crc'
+removed `/scratch/kirtib/12594478/logs/history/done/version-1/comet-02-45.ibnet_1510598344474_/2017/11/13/000000/.job_201711131039_0001_1510598348089_kirtib_wordcount.crc'
+removed `/scratch/kirtib/12594478/logs/history/done/version-1/comet-02-45.ibnet_1510598344474_/2017/11/13/000000/job_201711131039_0001_1510598348089_kirtib_wordcount'
+removed directory: `/scratch/kirtib/12594478/logs/history/done/version-1/comet-02-45.ibnet_1510598344474_/2017/11/13/000000'
+removed directory: `/scratch/kirtib/12594478/logs/history/done/version-1/comet-02-45.ibnet_1510598344474_/2017/11/13'
+removed directory: `/scratch/kirtib/12594478/logs/history/done/version-1/comet-02-45.ibnet_1510598344474_/2017/11'
+removed directory: `/scratch/kirtib/12594478/logs/history/done/version-1/comet-02-45.ibnet_1510598344474_/2017'
+removed directory: `/scratch/kirtib/12594478/logs/history/done/version-1/comet-02-45.ibnet_1510598344474_'
+removed directory: `/scratch/kirtib/12594478/logs/history/done/version-1'
+removed directory: `/scratch/kirtib/12594478/logs/history/done'
+removed directory: `/scratch/kirtib/12594478/logs/history'
+removed `/scratch/kirtib/12594478/logs/hadoop-kirtib-namenode-comet-02-45.log'
+removed `/scratch/kirtib/12594478/logs/hadoop-kirtib-jobtracker-comet-02-45.out'
+removed `/scratch/kirtib/12594478/logs/hadoop-kirtib-datanode-comet-02-45.sdsc.edu.log'
+removed `/scratch/kirtib/12594478/logs/hadoop-kirtib-tasktracker-comet-02-45.sdsc.edu.out'
+removed `/scratch/kirtib/12594478/logs/hadoop-kirtib-secondarynamenode-comet-02-45.sdsc.edu.log'
+removed `/scratch/kirtib/12594478/logs/hadoop-kirtib-secondarynamenode-comet-02-45.sdsc.edu.out'
+removed `/scratch/kirtib/12594478/logs/job_201711131039_0001_conf.xml'
+removed `/scratch/kirtib/12594478/logs/hadoop-kirtib-jobtracker-comet-02-45.log'
+removed `/scratch/kirtib/12594478/logs/hadoop-kirtib-tasktracker-comet-02-45.sdsc.edu.log'
+removed `/scratch/kirtib/12594478/logs/hadoop-kirtib-datanode-comet-02-45.sdsc.edu.out'
+removed `/scratch/kirtib/12594478/logs/userlogs/job_201711131039_0001/attempt_201711131039_0001_m_000002_0'
+removed `/scratch/kirtib/12594478/logs/userlogs/job_201711131039_0001/job-acls.xml'
+removed `/scratch/kirtib/12594478/logs/userlogs/job_201711131039_0001/attempt_201711131039_0001_r_000000_0'
+removed `/scratch/kirtib/12594478/logs/userlogs/job_201711131039_0001/attempt_201711131039_0001_m_000001_0'
+removed `/scratch/kirtib/12594478/logs/userlogs/job_201711131039_0001/attempt_201711131039_0001_m_000000_0'
+removed directory: `/scratch/kirtib/12594478/logs/userlogs/job_201711131039_0001'
+removed directory: `/scratch/kirtib/12594478/logs/userlogs'
+removed `/scratch/kirtib/12594478/logs/hadoop-kirtib-namenode-comet-02-45.out'
+removed directory: `/scratch/kirtib/12594478/logs'
+removed directory: `/tmp/Jetty_0_0_0_0_50060_task____.2vcltf/.active'
+removed directory: `/tmp/Jetty_0_0_0_0_50060_task____.2vcltf/jsp'
+removed directory: `/tmp/Jetty_0_0_0_0_50060_task____.2vcltf'
+removed directory: `/tmp/Jetty_0_0_0_0_50070_hdfs____w2cu08/.active'
+removed directory: `/tmp/Jetty_0_0_0_0_50070_hdfs____w2cu08/jsp'
+removed directory: `/tmp/Jetty_0_0_0_0_50070_hdfs____w2cu08'
+removed directory: `/tmp/Jetty_0_0_0_0_50030_job____yn7qmk/.active'
+removed directory: `/tmp/Jetty_0_0_0_0_50030_job____yn7qmk/jsp'
+removed directory: `/tmp/Jetty_0_0_0_0_50030_job____yn7qmk'
+removed directory: `/tmp/Jetty_0_0_0_0_50090_secondary____y6aanv/.active'
+removed directory: `/tmp/Jetty_0_0_0_0_50090_secondary____y6aanv/jsp'
+removed directory: `/tmp/Jetty_0_0_0_0_50090_secondary____y6aanv'
+removed directory: `/tmp/Jetty_0_0_0_0_50075_datanode____hwtdwq/.active'
+removed directory: `/tmp/Jetty_0_0_0_0_50075_datanode____hwtdwq/jsp'
+removed directory: `/tmp/Jetty_0_0_0_0_50075_datanode____hwtdwq'
