@@ -2,7 +2,7 @@
 #SBATCH --job-name="loganalysis"
 #SBATCH --output="loganalysis.%j.%N.out"
 #SBATCH --partition=compute
-#SBATCH --nodes=2
+#SBATCH --nodes=1
 #SBATCH --ntasks-per-node=24
 #SBATCH -t 00:15:00
 export HADOOP_CONF_DIR=/home/$USER/cometcluster
@@ -14,7 +14,7 @@ hadoop dfs -mkdir input
 
 echo "Copy data to HDFS .. "
 #hadoop dfs -copyFromLocal $WORKDIR/test.txt input/
-hadoop dfs -copyFromLocal $WORKDIR/templog1 input/a
+hadoop dfs -copyFromLocal $WORKDIR/input/ input/
 
 #Now we really start to run this job. The intput and output directories are under the hadoop file system.
 #hadoop jar $WORKDIR/wordcount.jar  wordcount input/ output/
